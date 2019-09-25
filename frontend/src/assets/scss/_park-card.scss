@@ -1,0 +1,153 @@
+.park-card {
+  position: relative;
+  height: 370px;
+  margin-bottom: 30px;
+
+  .park-card-image {
+    background: no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: inherit;
+    border-radius: 3px;
+  }
+
+  .park-card-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-image: linear-gradient(transparent, transparent, #ffffffe0, #fff);
+  }
+
+  .park-card-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 30px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .park-card-logo {
+    max-width: 130px;
+    max-height: 60px;
+  }
+
+  .park-card-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .park-card-price {
+      font-size: 1.2em;
+      margin-right: 30px;
+
+      .price-prefix {
+        display: block;
+        font-size: .9em;
+        margin-bottom: -5px;
+      }
+      .price {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+      .price-append {
+        font-size: .7em;
+        color: #8c8c8c;
+      }
+    }
+
+    $btn-success: #75C8B0;
+    $btn-dark: #324049;
+
+    .park-card-btn {
+      &.btn-success {
+        color: $white;
+        background-color: $btn-success;
+        border-color: darken($btn-success, 10);
+
+        @include hover() {
+          background-color: darken($btn-success, 10);
+          border-color: darken($btn-success, 20);
+        }
+
+        &:focus {
+          box-shadow: 0 0 0 0.2rem lighten($btn-success, 15);
+        }
+      }
+
+      &.btn-dark {
+        color: $white;
+        background-color: $btn-dark;
+        border-color: darken($btn-dark, 10);
+        cursor: default;
+
+        @include hover() {
+          background-color: darken($btn-dark, 10);
+          border-color: darken($btn-dark, 20);
+        }
+
+        &:focus {
+          box-shadow: 0 0 0 0.2rem lighten($btn-dark, 50);
+        }
+      }
+    }
+  }
+
+  .park-card-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    transition-duration: .3s;
+    opacity: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .park-card-info {
+      height: 100%;
+      justify-content: center;
+      flex-direction: column;
+
+      .park-card-price {
+        text-align: center;
+        margin: 20px 0;
+      }
+    }
+  }
+
+  .park-card-button {
+    background: #E15577;
+    padding: 15px;
+    font-weight: 500;
+    color: $white;
+    text-align: center;
+    width: 100%;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  &:hover {
+    .park-card-hover {
+      opacity: .95;
+    }
+    .park-hover-hide {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "WE_OFFER": "We offer the",
+  "BEST_PRICES": "Best prices",
+  "FOR_CALIFORNIA_THEMPARK": "For California themepark tickets",
+  "ABOUT": {
+    "TITLE": "About Us",
+    "CONTENT": "<h2>About us</h2><p>Ticket selling exists to help you experience California’s best theme parks for the best prices.</p>"
+  },
+  "TERMS": {
+    "TITLE": "User Agreement",
+    "CONTENT": "<h2>User Agreement</h2><h3>1. General Provisions</h3><p>1.1.  This User Agreement (hereinafter referred to as the Agreement) refers to the online store website at</p>"
+  },
+  "POLICY": {
+    "TITLE": "Privacy Policy",
+    "CONTENT": "<h2>Privacy Policy</h2><h3>Payments. Online Payment Using a Bank Card</h3><p>Our web site is connected to Internet acquiring. You can pay your Good using your Visa, MasterCard, Maestro and MIR bank card. After confirming a selected Good, a secure window will open, which provides a payment page of a CloudPayments processing centre, where you have to enter your bank card data."
+  }
+}

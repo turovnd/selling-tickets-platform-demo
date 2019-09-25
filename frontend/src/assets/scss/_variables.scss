@@ -1,0 +1,19 @@
+// General
+$body-bg:                             #F0F0F7;
+$brand-color:                         #E15577;
+$brand-color-hover:                   lighten($brand-color, 20);
+
+// Header
+$header-bg:                           $white;
+$header-color:                        $gray-900;
+$header-hover-color:                  $black;
+$header-icon-color:                   $gray-700;
+
+// Footer
+$footer-bg:                           $white;
+$footer-color:                        $gray-900;
+$footer-icon-color:                   $gray-700;
+
+// Dropdowm
+$dropdown-active-bg:                  $gray-200;
+$dropdown-active-color:               $black;

@@ -1,0 +1,18 @@
+<svg width="40px" height="45px" viewBox="0 0 40 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Send-Tickets---Uploaded" transform="translate(-40.000000, -200.000000)">
+            <g id="pdf" transform="translate(40.000000, 200.000000)">
+                <g id="Group-2">
+                    <path d="M8.4375,3.55271368e-15 C6.890625,3.55271368e-15 6.06445313,1.453125 6.06445313,3 L6.06445313,42.1875 C6.06445313,43.734375 6.890625,45 8.4375,45 L36.5625,45 C38.109375,45 39,43.734375 39,42.1875 L39,11.25 L28.125,3.55271368e-15 L8.4375,3.55271368e-15 Z" id="Path" fill="#EAEAEA" fill-rule="nonzero"></path>
+                    <path d="M30.9375,11.25 L39.375,11.25 L28.125,0 L28.125,8.4375 C28.125,9.984375 29.390625,11.25 30.9375,11.25 Z" id="Path" fill="#B0B7BD" fill-rule="nonzero"></path>
+                    <polygon id="Path" fill="#CAD1D8" fill-rule="nonzero" points="39 19 31 11 39 11"></polygon>
+                    <path d="M33.75,36.5625 C33.75,37.3359375 33.1171875,37.96875 32.34375,37.96875 L1.40625,37.96875 C0.6328125,37.96875 0,37.3359375 0,36.5625 L0,22.5 C0,21.7265625 0.6328125,21.09375 1.40625,21.09375 L32.34375,21.09375 C33.1171875,21.09375 33.75,21.7265625 33.75,22.5 L33.75,36.5625 Z" id="Path" fill="#E15577" fill-rule="nonzero"></path>
+                    <text id="PNG" font-family="Montserrat-Bold, Montserrat" font-size="10" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="5.445" y="33">PDF</tspan>
+                    </text>
+                    <path d="M32.34375,37.96875 L5.625,37.96875 L5.625,39.375 L32.34375,39.375 C33.1171875,39.375 33.75,38.7421875 33.75,37.96875 L33.75,36.5625 C33.75,37.3359375 33.1171875,37.96875 32.34375,37.96875 Z" id="Path" fill="#CAD1D8" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

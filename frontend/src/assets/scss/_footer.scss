@@ -1,0 +1,35 @@
+.app-footer {
+  background-color: $footer-bg;
+  padding: 1rem 0 2rem;
+
+  .logo {
+    height: 34px;
+  }
+
+  .nav-item {
+    &.nav-link-small {
+      font-size: .9em;
+    }
+
+    .nav-link {
+      font-size: .9em;
+      color: $footer-color;
+
+      .icon {
+        color: $footer-icon-color;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .payment {
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 33%;
+    text-align: center;
+
+    img {
+      height: 28px;
+    }
+  }
+}

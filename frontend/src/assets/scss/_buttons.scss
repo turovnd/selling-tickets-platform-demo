@@ -1,0 +1,69 @@
+.btn-submit {
+  padding: 12px;
+  background-color: $brand-color;
+  border-color: $brand-color-hover;
+  color: #FFFFFF;
+  font-weight: bold;
+
+  @include hover-focus() {
+    color: #FFFFFF;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem $brand-color-hover
+  }
+}
+
+.btn-outline-submit {
+  padding: 12px;
+  background-color: transparent;
+  border-color: $brand-color;
+  color: $brand-color;
+  font-weight: bold;
+
+  @include hover-focus() {
+    background-color: transparent;
+    border-color: $brand-color;
+    color: $brand-color;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem $brand-color-hover
+  }
+}
+
+.submit-link {
+  color: $brand-color;
+
+  @include hover-focus() {
+    outline: none;
+    text-decoration: none;
+    color: $brand-color;
+  }
+}
+
+.btn-w100 {
+  min-width: 100px;
+}
+
+.btn-w150 {
+  min-width: 150px;
+}
+
+.btn-w200 {
+  min-width: 200px;
+}
+
+.btn-w250 {
+  min-width: 250px;
+}
+
+.badge-brand {
+  background-color: $brand-color;
+  color: $white;
+}
+
+.badge-success {
+  background-color: #75C8B0;
+  color: $white;
+}

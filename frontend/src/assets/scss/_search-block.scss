@@ -1,0 +1,53 @@
+.search-block {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 20px 30px 0;
+
+  .v-input__slot {
+    &:focus {
+      outline-color: $brand-color-hover
+    }
+  }
+
+  .theme--light.v-icon {
+    color: $brand-color;
+  }
+
+  &.small {
+    font-size: 100%;
+
+    .v-input__slot {
+      min-height: 48px !important;
+
+      .v-label {
+        top: 14px !important;
+      }
+
+      input {
+        margin-top: 14px !important;
+      }
+      .v-input__append-inner {
+        margin-top: 12px;
+      }
+    }
+  }
+
+  &.no-details {
+    .v-input__slot {
+      margin-bottom: 0;
+    }
+    .v-text-field__details {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .search-block {
+    padding-bottom: 30px;
+
+    .d-flex {
+      padding: 0 12px !important;
+    }
+  }
+}

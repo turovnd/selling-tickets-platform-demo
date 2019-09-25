@@ -1,0 +1,75 @@
+.trip-table {
+  min-height: 30vh;
+
+  thead > tr > th {
+    text-transform: uppercase;
+    color: #324049;
+    padding: 0.5rem 0.75rem;
+    border: 0;
+    &:focus {
+      box-shadow: none;
+      outline: 0;
+    }
+  }
+  tbody > tr > td {
+    padding: 18px 0.75rem;
+
+    .btn-guests {
+      display: flex;
+      justify-content: space-between;
+      white-space: nowrap;
+      padding: 0;
+      text-align: left;
+
+      img {
+          transition: ease-in-out .2s;
+      }
+
+      &[aria-expanded="true"] {
+        img {
+          transform: rotate(-180deg);
+        }
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    .collapse-block {
+      padding-top: 10px;
+
+      > div {
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .dropdown {
+      .dropdown-toggle {
+        padding: 0 10px;
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+      .dropdown-menu {
+        padding: 2px 0 0;
+
+        .dropdown-item {
+          padding: 10px 20px;
+          font-weight: 500;
+
+          @include hover() {
+            color: #6DBAA4;
+            background-color: #75C8B015;
+          }
+        }
+      }
+    }
+  }
+}

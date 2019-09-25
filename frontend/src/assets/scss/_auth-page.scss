@@ -1,0 +1,17 @@
+.auth-page {
+  position: relative;
+  margin: 70px auto;
+  min-height: 50vh;
+  max-width: 350px !important;
+
+  .v-label,
+  .v-input--selection-controls {
+    margin: 0;
+  }
+
+  .recovery-link {
+    position: absolute;
+    margin-top: -25px;
+    right: 0;
+  }
+}

@@ -1,0 +1,315 @@
+.park-page {
+  max-width: 640px;
+  margin: 40px auto 0;
+
+  p {
+    margin-bottom: 25px;
+  }
+}
+
+.park-metadata {
+  margin-bottom: 20px;
+
+  .park-title {
+    margin-bottom: 15px;
+    font-size: 2.15em;
+
+    .park-location {
+      float: right;
+      font-size: 14px;
+      padding: 10px 0;
+      color: #32404980;
+
+      .icon {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .park-description {
+    position: relative;
+    cursor: pointer;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+
+    &:after {
+      color: $brand-color;
+      position: absolute;
+      right: 0;
+      top: 4.5em;
+      background: white;
+    }
+
+    &.more-ru {
+      &:after {
+        content: "... Больше";
+      }
+    }
+
+    &.more-en {
+      &:after {
+        content: "... More";
+      }
+    }
+  }
+
+  .park-features {
+    margin: 0 0 25px !important;
+
+    .feature {
+      padding: 10px 0 !important;
+      text-align: center;
+
+      img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .park-images {
+    img {
+      width: inherit;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+
+.park-options {
+  .option-block {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    padding: 12px 0 !important;
+    border: 2px solid transparent;
+    border-radius: 5px;
+
+    .option-content {
+      padding: 0 12px;
+      border-left: 1px solid #97979720;
+    }
+
+    &:first-child {
+      .option-content {
+        border-color: transparent;
+      }
+    }
+
+    &.selected {
+      border-color: #F7F5F5;
+
+      &+ .option-block .option-content,
+      .option-content {
+        border-color: transparent;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        width: 26px;
+        height: 26px;
+        background-image: url("data:image/svg+xml;base64,PHN2ZyBpZD0idGVzdCIgd2lkdGg9IjI2cHgiIGhlaWdodD0iMjZweCIgdmlld0JveD0iMCAwIDI2IDI2IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiIGlkPSJsaW5lYXJHcmFkaWVudC0xIj4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzY5QTBDNSIgb2Zmc2V0PSIwJSIvPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjNUJFNUM0IiBvZmZzZXQ9IjEwMCUiLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPGcgaWQ9IldlYi1EZXNpZ24iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJTZWxlY3QtVGlja2V0cy1OZXciIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yOTEuMDAwMDAwLCAtODEwLjAwMDAwMCkiPgogICAgICAgICAgICA8ZyBpZD0iRGF5cyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTY1LjAwMDAwMCwgNzYyLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPGcgaWQ9ImNoZWNrIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMjYuMDAwMDAwLCA0OC4wMDAwMDApIj4KICAgICAgICAgICAgICAgICAgICA8Y2lyY2xlIGlkPSJPdmFsIiBmaWxsPSJ1cmwoI2xpbmVhckdyYWRpZW50LTEpIiBjeD0iMTMiIGN5PSIxMyIgcj0iMTMiLz4KICAgICAgICAgICAgICAgICAgICA8cG9seWxpbmUgaWQ9IlBhdGgtMiIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgcG9pbnRzPSI4IDEzLjUgMTEgMTcgMTcgOSIvPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=");
+      }
+    }
+  }
+}
+
+.park-guests-selection {
+  justify-content: space-between;
+
+  .park-guests-block {
+    padding: 12px 0 !important;
+    max-width: 250px;
+  }
+
+  .split {
+    width: 1px;
+    background-color: #97979720;
+    margin: 12px 0;
+  }
+
+  .park-guests-counter {
+    display: flex;
+    flex-direction: row;
+    user-select: none;
+    min-width: 120px;
+    max-width: 120px;
+    align-items: center;
+    justify-content: space-around;
+
+    .circle {
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      color: #E15577;
+      border-radius: 50%;
+      border: 2px solid #E1557730;
+      padding: 7px;
+
+      &.disabled {
+        opacity: .5;
+        cursor: not-allowed;
+      }
+    }
+
+    .number {
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .park-guests-selection {
+    display: flex;
+    flex-direction: column;
+
+    .park-guests-block {
+      max-width: 100%;
+    }
+    .split {
+      display: none;
+    }
+  }
+}
+
+.park-tickets {
+  .option-block {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    padding: 0 !important;
+    border: 2px solid transparent;
+    border-radius: 5px;
+
+    .option-content {
+      padding: 12px 0;
+      margin: 0 20px;
+      font-size: .9em;
+      border-top: 1px solid #97979720;
+
+      .option-content-title {
+        width: 60%;
+        text-align: left;
+      }
+
+      .option-content-price {
+        width: 20%;
+        text-align: center;
+      }
+
+      h5 {
+        font-size: 1.25em;
+        margin-bottom: 5px;
+      }
+
+    }
+
+    &:first-child {
+      .option-content {
+        border-color: transparent;
+      }
+    }
+
+    &.selected {
+      border-color: #F7F5F5;
+
+      &+ .option-block .option-content,
+      .option-content {
+        border-color: transparent;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        width: 26px;
+        height: 26px;
+        background-image: url("data:image/svg+xml;base64,PHN2ZyBpZD0idGVzdCIgd2lkdGg9IjI2cHgiIGhlaWdodD0iMjZweCIgdmlld0JveD0iMCAwIDI2IDI2IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiIGlkPSJsaW5lYXJHcmFkaWVudC0xIj4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzY5QTBDNSIgb2Zmc2V0PSIwJSIvPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjNUJFNUM0IiBvZmZzZXQ9IjEwMCUiLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPGcgaWQ9IldlYi1EZXNpZ24iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJTZWxlY3QtVGlja2V0cy1OZXciIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yOTEuMDAwMDAwLCAtODEwLjAwMDAwMCkiPgogICAgICAgICAgICA8ZyBpZD0iRGF5cyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTY1LjAwMDAwMCwgNzYyLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPGcgaWQ9ImNoZWNrIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMjYuMDAwMDAwLCA0OC4wMDAwMDApIj4KICAgICAgICAgICAgICAgICAgICA8Y2lyY2xlIGlkPSJPdmFsIiBmaWxsPSJ1cmwoI2xpbmVhckdyYWRpZW50LTEpIiBjeD0iMTMiIGN5PSIxMyIgcj0iMTMiLz4KICAgICAgICAgICAgICAgICAgICA8cG9seWxpbmUgaWQ9IlBhdGgtMiIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgcG9pbnRzPSI4IDEzLjUgMTEgMTcgMTcgOSIvPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=");
+      }
+    }
+  }
+}
+
+.page-faq {
+  h3 {
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    color: $gray-900;
+    text-align: left;
+    background-color: transparent;
+    border: 0;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 1.2em;
+    &:focus {
+      box-shadow: none !important;
+    }
+    &:active {
+      color: $gray-900 !important;
+      background-color: transparent !important;
+    }
+    .icon {
+      color: $brand-color;
+      margin-left: 10px;
+      transition-duration: .2s;
+    }
+    &.collapsed {
+      .icon {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+
+  .alert-secondary {
+    border-radius: 8px;
+    text-decoration: underline;
+    background-color: #EAEAEA;
+    border-color: darken(#EAEAEA, 10);
+  }
+}
+
+.popover {
+  max-width: 200px;
+}
+
+.park-details {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-weight: $font-weight-light;
+
+  > div {
+    padding: 0 20px;
+    margin-bottom: 10px;
+  }
+  > div:not(:last-child) {
+    border-right: 1px solid #D1D1D1;
+  }
+}
+
+.park-guests {
+  width: 100%;
+  font-weight: $font-weight-light;
+
+  tr {
+    vertical-align: top;
+  }
+
+  .border {
+    border: 0 !important;
+    border-left: 1px solid #D1D1D1 !important;
+  }
+}

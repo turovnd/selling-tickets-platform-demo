@@ -1,0 +1,142 @@
+.file-uploads.file-uploads-html5 label {
+  cursor: pointer;
+}
+
+.uploader-block {
+  position: relative;
+}
+
+.upload-drop-area {
+  background: #000000bb;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: 0;
+  height: 100vh;
+  z-index: 1;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #D8D8D8;
+  padding: 1em 0;
+
+  &.success {
+    background-color: transparent !important;
+    border-color: #D8D8D8 !important;
+
+    .upload-icon {
+      display: block;
+    }
+
+    .upload-success {
+      display: flex;
+    }
+  }
+
+  &.error {
+    background-color: transparent !important;
+    border-color: #D8D8D8 !important;
+
+    .upload-icon {
+      display: block;
+    }
+
+    .upload-error {
+      display: flex;
+    }
+  }
+
+  &.progress {
+    height: auto;
+    overflow: auto;
+    font-size: inherit;
+    background-color: transparent;
+    border-radius: 0;
+
+    .upload-text {
+      display: block;
+    }
+
+    .upload-progress {
+      display: block;
+    }
+  }
+
+  &:last-child {
+    border: 0;
+  }
+
+  .upload-image {
+    width: 40px;
+  }
+
+  .upload-text {
+    width: 100%;
+    padding: 0 20px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .upload-progress {
+    display: none;
+    height: 6px;
+    margin-top: 6px;
+    background-color: #EAEAEA;
+
+    .progress-bar {
+      height: inherit;
+      background-color: #75C8B0;
+    }
+  }
+
+  .upload-success {
+    display: none;
+    align-items: center;
+    white-space: nowrap;
+    margin-left: 10px;
+    color: #75C8B0;
+
+    svg {
+      margin-right: 5px;
+    }
+  }
+
+  .upload-error {
+    display: none;
+    align-items: center;
+    white-space: nowrap;
+    margin-left: 10px;
+    color: #ff5252;
+
+    svg {
+      margin-right: 5px;
+    }
+  }
+
+  .upload-icon {
+    display: none;
+    width: 25px;
+    opacity: .7;
+    cursor: pointer;
+  }
+
+  .upload-radio {
+    .v-input--selection-controls__input {
+      margin: 0 auto;
+    }
+    .brand--text {
+      color: $brand-color;
+      caret-color: $brand-color
+    }
+  }
+}

@@ -1,0 +1,82 @@
+// IE10&11 Flexbox fix
+@media all and (-ms-high-contrast:none) {
+  html {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+body {
+  font-family: 'Montserrat', serif;
+}
+
+.theme--light.application {
+  background: $white;
+}
+
+.dropdown-item {
+  &:active,
+  &.active {
+    background-color: $dropdown-active-bg;
+    color: $dropdown-active-color;
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media (max-width: 992px) {
+ .container {
+   max-width: 90% !important;
+ }
+}
+
+.notifications {
+  top: 15px !important;
+  right: 10px !important;
+}
+
+.text-light {
+  color: #32404960 !important;
+}
+
+.text-brand {
+  color: $brand-color;
+
+  &[href] {
+    @include hover-focus() {
+      color: $brand-color;
+    }
+  }
+}
+
+.text-black {
+  color: $black;
+
+  &[href] {
+    @include hover-focus() {
+      color: $black;
+    }
+  }
+}
+
+.badge-light {
+  background-color: #F7F5F5;
+}
+
+.min-vh-50 {
+  min-height: 50vh;
+}
+
+h5 {
+  font-weight: normal;
+}
+
+.min-vh-65 {
+  min-height: 65vh;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}

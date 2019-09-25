@@ -1,0 +1,29 @@
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-vue/src/index.scss';
+@import '~vuetify/dist/vuetify.min.css';
+
+@import "variables";
+
+@import "header";
+@import "footer";
+@import "layout";
+@import "separator";
+
+@import "search-block";
+@import "summary";
+@import "progress";
+@import "park-page";
+@import "park-card";
+@import "order-page";
+@import "order-card";
+@import "error-page";
+@import "about-page";
+@import "auth-page";
+@import "form-page";
+@import "buttons";
+@import "payment-widget";
+@import "nav";
+@import "table";
+@import "form";
+@import "list";
+@import "uploads";

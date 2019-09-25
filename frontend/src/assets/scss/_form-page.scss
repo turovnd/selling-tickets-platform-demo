@@ -1,0 +1,260 @@
+.form-page {
+  background-color: rgba(38, 38, 38, 0.6);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+
+  .form-block {
+    position: relative;
+    min-height: 550px;
+    background-color: #f5f5f5;
+    border-radius: 11px;
+    padding: 20px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 375px;
+    margin: auto;
+
+    &.status {
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+    }
+
+    &.modal-shown {
+      .modal-background {
+        display: block;
+      }
+      .calendar-modal {
+        display: block;
+      }
+    }
+  }
+
+  .v-form {
+
+    h1 {
+      color: #4D4D4D;
+      font-size: 24px;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .v-input {
+      margin-bottom: 15px;
+
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+
+      &.primary--text,
+      .primary--text {
+        color: #52ccf0 !important;
+        caret-color: #324049 !important;
+      }
+
+      &.error--text,
+      .error--text {
+        color: #FF4E4F !important;
+        caret-color: #324049 !important;
+
+        .v-label {
+          display: none;
+        }
+        .v-input__slot {
+          box-shadow: rgba(255, 78, 79, 0.4) !important;
+        }
+      }
+
+      .v-input__slot {
+        margin-bottom: 0;
+        min-height: 50px !important;
+        background-color: #FFF !important;
+        border-radius: 8px !important;
+        border: 0 !important;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+        .v-label {
+          top: 14px;
+        }
+
+        input {
+          margin-top: 16px !important;
+        }
+
+        @include hover() {
+          box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      .v-text-field__details {
+        position: absolute;
+        top: 7px;
+        pointer-events: none;
+      }
+
+      .v-input__append-inner {
+        margin-top: 12px;
+      }
+    }
+
+    .v-select__selections {
+      padding-top: 0 !important;
+      .v-select__selection {
+        margin-top: 20px;
+      }
+    }
+
+    .v-btn {
+      border: 0 !important;
+      border-radius: 8px;
+      text-transform: none;
+      background-color: #FFF !important;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+      margin: 10px 0 0;
+      min-height: 50px;
+      outline: none;
+
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+
+      &:before,
+      &:focus {
+        background-color: #FFF !important;
+      }
+
+      @include hover() {
+        box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.1);
+      }
+
+      &.btn-submit {
+        padding: 0;
+        color: #FFF;
+        width: 100%;
+        background-image: linear-gradient(left, #69A0C5, #5BE5C4);
+      }
+    }
+
+    .v-card {
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      background: #FFFFFF;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #000000;
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 21px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 7px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .badge-form {
+      padding: 5px 8px;
+      color: #FFF;
+      border-radius: 8px;
+      background-image: linear-gradient(left, #69A0C5, #5BE5C4);
+    }
+  }
+
+  .payment-widget {
+    margin: 0 -12px;
+
+    .flex {
+      padding: 0 12px !important;
+    }
+
+    .sm4 {
+      flex-basis: 50% !important;
+      max-width: 50% !important;
+
+      &:last-child {
+        flex-basis: 100% !important;
+        max-width: 100% !important;
+      }
+    }
+  }
+
+  .modal-background {
+    display: none;
+    position: absolute;
+    border-radius: inherit;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #26262640;
+    z-index: 1;
+  }
+
+  .calendar-modal {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    border-radius: 11px;
+    z-index: 2;
+
+    .calendar-header {
+      padding: 12px;
+      text-align: center;
+      font-weight: bold;
+      background-color: #FFF;
+      border-top-left-radius: 11px;
+      border-top-right-radius: 11px;
+    }
+
+    .calendar {
+      margin: 12px auto;
+      .calendar-cell.calendar-cell-active,
+      .calendar-cell:not(.calendar-cell-disabled):hover {
+        border-color: transparent !important;
+        background-color: #fff;
+      }
+
+      .calendar-cell.calendar-cell-active:after {
+        background-size: 100% !important;
+        width: 20px !important;
+        height: 20px !important;
+      }
+
+      .inform {
+        display: none;
+      }
+    }
+
+    .calendar-button {
+      margin: 0 30px 15px;
+    }
+
+  }
+
+  small {
+    font-size: 70%;
+  }
+
+
+  .theme--light.v-text-field--outline > .v-input__control > .v-input__slot {
+    border: 0 !important;
+    @include hover() {
+      border: 0 !important;
+    }
+  }
+}

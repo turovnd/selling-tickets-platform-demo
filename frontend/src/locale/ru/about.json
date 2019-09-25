@@ -1,0 +1,18 @@
+{
+  "WE_OFFER": "Мы предлагаем",
+  "BEST_PRICES": "Лучшие цены",
+  "FOR_CALIFORNIA_THEMPARK": "На билеты в парк развлечений Калифорнии",
+  "ABOUT": {
+    "TITLE": "О нас",
+    "CONTENT": "<h2>О нас</h2><p>Мы поможем Вам посетить лучшие тематические парки Калифорнии по лучшим ценам.</p>"
+  },
+  "TERMS": {
+    "TITLE": "Пользовательское соглашение",
+    "CONTENT": "<h2>Пользовательское соглашение</h2><h3>1. Общие положения</h3><p>1.1. Настоящее Пользовательское соглашение (далее – Соглашение) относится к сайту Интернет-магазина, расположенному по адресу "
+  },
+  "POLICY": {
+    "TITLE": "Privacy Policy",
+    "CONTENT": "<h2>Privacy Policy</h2><h3>Payments. Online Payment Using a Bank Card</h3><p>Our web site is connected to Internet acquiring. You can pay your Good using your Visa, MasterCard, Maestro and MIR bank card. After confirming a selected Good, a secure window will open, which provides a payment page of a CloudPayments processing centre, where you have to enter your bank card data."
+  }
+}
+

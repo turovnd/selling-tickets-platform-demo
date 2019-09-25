@@ -1,0 +1,17 @@
+.v-input--checkbox {
+  .v-label {
+    margin-bottom: 0;
+  }
+}
+
+
+.theme--light.v-text-field--outline {
+  color: #DBDBDB;
+  caret-color: #DBDBDB;
+}
+.theme--light.v-text-field--outline > .v-input__control > .v-input__slot {
+  border: 1px solid !important;
+  @include hover() {
+    border: 1px solid !important;
+  }
+}
